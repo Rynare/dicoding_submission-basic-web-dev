@@ -1,98 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="./assets/prambanan-logo.ico" />
-    <title>Cerita Rakyat</title>
-    <meta name="author" content="M. FAHIM DAVID BACHTIAR" />
-    <meta
-      name="description"
-      content="Candi Prambanan: Saksikan keagungan Hindu di Jawa. Jelajahi kompleks candi megah ini dan rasakan atmosfer kerajaan Mataram kuno."
-    />
-    <meta
-      name="keywords"
-      content="Candi Prambanan, wisata Candi Prambanan, Candi Hindu Indonesia, kompleks candi terbesar Indonesia, arsitektur Candi Prambanan, pahatan Candi Prambanan, sejarah Candi Prambanan, kerajaan Mataram, wisata Yogyakarta, destinasi wisata Indonesia, Rara Jonggrang, Trimurti, Dewa Siwa, Dewa Wisnu, Dewa Brahma, Nandi, Garuda, Angsa, Ramayana, relief Candi Prambanan, Pertunjukan Ramayana Ballet, Tari Kecak, Sendratari Prambanan, paket wisata Candi Prambanan, harga tiket Candi Prambanan, jam buka Candi Prambanan, akses menuju Candi Prambanan, penginapan dekat Candi Prambanan, hotel dekat Candi Prambanan, kuliner dekat Candi Prambanan, fotografi Candi Prambanan, Instagrammable Candi Prambanan"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./app/styles/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap");
-      .protest-revolution-regular {
-        font-family: "Protest Revolution", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-      }
-      .material-symbols-outlined {
-        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
-      }
-    </style>
-    <link
-      rel="stylesheet"
-      media="screen and (min-width: 992px)"
-      href="./app/styles/laptop-dekstop(min 992px).css"
-    />
-    <link
-      rel="stylesheet"
-      media="screen and (min-width: 600px)"
-      href="./app/styles/large-phone(min 600px).css"
-    />
-  </head>
-  <body>
-    <div class="backdrop"></div>
-    <header>
-      <nav class="nav-main">
-        <a href="javascript:void(0)" id="logo">
-          <img
-            src="./assets/prambanan-logo.png"
-            width="36px"
-            height="36px"
-            alt=""
-          />
-          <span class="protest-revolution-regular">Prambanan</span>
-        </a>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="./cerita-rakyat.html">Cerita rakyat</a></li>
-          <li><a href="./sejarah.html">Sejarah</a></li>
-          <li><a href="./lokasi.html">Lokasi</a></li>
-          <li><a href="./funfact.html">Funfact</a></li>
-          <li><a href="./credit.html">Credit/Copyright&copy;</a></li>
-        </ul>
-        <label for="hamburger-status">
-          <div class="hamburger">
-            <div class="hamburger-line"></div>
-            <div class="hamburger-line"></div>
-            <div class="hamburger-line"></div>
-          </div>
-        </label>
-        <input type="checkbox" id="hamburger-status" hidden />
-      </nav>
-      <nav class="nav-mobile">
-        <ul>
-          <li><a href="javascript:void(0)">Home</a></li>
-          <li><a href="./cerita-rakyat.html">Cerita rakyat</a></li>
-          <li><a href="./sejarah.html">Sejarah</a></li>
-          <li><a href="./lokasi.html">Lokasi</a></li>
-          <li><a href="./funfact.html">Funfact</a></li>
-          <li><a href="./credit.html">Credit/Copyright&copy;</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <div id="content">
-        <article></article>
-      </div>
-      <aside>
-        <div class="profile-mobile">
-          <span class="material-symbols-outlined"> account_circle </span>
-        </div>
-      </aside>
-    </main>
-    <footer></footer>
-    <script src="./app/scripts/script.js"></script>
-  </body>
+
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/x-icon" href="./assets/prambanan-logo.ico" />
+        <title>Cerita Rakyat</title>
+        <meta name="author" content="M. FAHIM DAVID BACHTIAR" />
+        <meta name="description"
+            content="Candi Prambanan: Saksikan keagungan Hindu di Jawa. Jelajahi kompleks candi megah ini dan rasakan atmosfer kerajaan Mataram kuno." />
+        <meta name="keywords"
+            content="Candi Prambanan, wisata Candi Prambanan, Candi Hindu Indonesia, kompleks candi terbesar Indonesia, arsitektur Candi Prambanan, pahatan Candi Prambanan, sejarah Candi Prambanan, kerajaan Mataram, wisata Yogyakarta, destinasi wisata Indonesia, Rara Jonggrang, Trimurti, Dewa Siwa, Dewa Wisnu, Dewa Brahma, Nandi, Garuda, Angsa, Ramayana, relief Candi Prambanan, Pertunjukan Ramayana Ballet, Tari Kecak, Sendratari Prambanan, paket wisata Candi Prambanan, harga tiket Candi Prambanan, jam buka Candi Prambanan, akses menuju Candi Prambanan, penginapan dekat Candi Prambanan, hotel dekat Candi Prambanan, kuliner dekat Candi Prambanan, fotografi Candi Prambanan, Instagrammable Candi Prambanan" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./app/styles/style.css" />
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap");
+
+            .protest-revolution-regular {
+                font-family: "Protest Revolution", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            .material-symbols-outlined {
+                font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+            }
+        </style>
+        <link rel="stylesheet" media="screen and (min-width: 992px)"
+            href="./app/styles/laptop-dekstop(min 992px).css" />
+        <link rel="stylesheet" media="screen and (min-width: 600px)" href="./app/styles/large-phone(min 600px).css" />
+    </head>
+
+    <body>
+        <div class="backdrop"></div>
+        <header>
+            <nav class="nav-main">
+                <a href="./index.html" id="logo">
+                    <img src="./assets/prambanan-logo.png" width="36px" height="36px" alt="" />
+                    <span class="protest-revolution-regular">Prambanan</span>
+                </a>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="javascript:void(0)">Cerita rakyat</a></li>
+                    <li><a href="./sejarah.html">Sejarah</a></li>
+                    <li><a href="./lokasi.html">Lokasi</a></li>
+                    <li><a href="./funfact.html">Funfact</a></li>
+                    <li><a href="./credit.html">Credit/Copyright&copy;</a></li>
+                </ul>
+                <label for="hamburger-status">
+                    <div class="hamburger">
+                        <div class="hamburger-line"></div>
+                        <div class="hamburger-line"></div>
+                        <div class="hamburger-line"></div>
+                    </div>
+                </label>
+                <input type="checkbox" id="hamburger-status" hidden />
+            </nav>
+            <nav class="nav-mobile" style="display: none;">
+                <ul>
+                    <li><a href="javascript:void(0)">Home</a></li>
+                    <li><a href="javascript:void(0)">Cerita rakyat</a></li>
+                    <li><a href="./sejarah.html">Sejarah</a></li>
+                    <li><a href="./lokasi.html">Lokasi</a></li>
+                    <li><a href="./funfact.html">Funfact</a></li>
+                    <li><a href="./credit.html">Credit/Copyright&copy;</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main style="overflow-y: auto">
+            <style>
+                #content header {
+                    text-align: center;
+                }
+
+                #content {
+                    padding: 5px 10px;
+                    margin-bottom: 10px;
+                }
+
+                #content figure img {
+                    width: 100%;
+                }
+            </style>
+            <div id="content">
+                <article>
+                    <header>
+                        <h3 style="font-size: 16px; margin-bottom: 3px;">Legenda Candi Prambanan</h3>
+                        <h1 style="margin: 0;">Kisah Roro Jonggrang</h1>
+                        <h5 style="margin-top: 5px;">by : Anisa Karnesyia&nbsp;|&nbsp;<a
+                                href="https://www.haibunda.com/parenting/20210902104528-61-236870/kisah-roro-jonggrang-legenda-candi-prambanan-yang-bisa-diceritakan-ke-anak"
+                                target="_blank">Haibunda</a>
+                            </h2>
+                    </header>
+                    <figure>
+                        <img src="./assets/roro-jonggrang.jpg" alt="roro jonggrang">
+                        <figcaption style="font-size: 12px; text-align: center;">
+                            gambar: <a href="https://www.mikirbae.com/2020/12/pembelajaran-1-tema-8-subtema-2.html"
+                                target="_blank">www.mikirbae.com</a>
+                        </figcaption>
+                    </figure>
+                    <p>Kisah Roro Jonggrang bermula saat ayahnya,
+                        Raja Prambanan, gugur dari
+                        perang melawan Bandung Bondowoso dari Kerajaan Pengging. Bandung Bondowoso secara otomatis
+                        langsung menguasai Kerajaan
+                        Prambanan.</p>
+                    <p>Penolakan Roro Jonggrang tersebut membuat Bandung Bondowoso marah. Ia pun mengurung
+                        perempuan cantik itu di dalam
+                        istana, bersama Bi Sumi dan dayang-dayang lain.</p>
+                    <p>Penolakan Roro Jonggrang tersebut membuat Bandung Bondowoso marah. Ia pun mengurung
+                        perempuan cantik itu di dalam
+                        istana, bersama Bi Sumi dan dayang-dayang lain.</p>
+                    <p>"Aku bersedia menjadi permaisurimu, tapi ada syaratnya. Jika kau berhasil memenuhinya, maka
+                        aku akan menikah denganmu.
+                        Tapi jika kamu gagal, maka izinkanlah aku pergi dari sini," kata Roro Jonggrang pada Bandung
+                        Bondowoso.</p>
+                    <p>Mendengar permintaan Roro Jonggrang, Bandung Bondowoso tampak senang. Dengan angkuh dia
+                        menjawab yakin bisa memenuhi
+                        permintaan Roro Jonggrang.</p>
+                    <p>"Apa pun yang kau minta, pasti akan kuberikan. Jika sampai aku gagal, maka kau tak usah
+                        pergi dari sini. Aku yang akan
+                        mengembalikan kerajaan ini padamu," jawab Bandung Bondowoso.</p>
+                    <p>Roro Jonggrang tersenyum, "Kalau begitu, buatkan aku seribu candi dalam semalam. Semuanya
+                        harus selesai sebelum matahari
+                        terbit," ujarnya.</p>
+                    <p>Bandung Bondowoso sempat heran dengan permintaan Roro Jonggrang. Tak lama, dia tertawa
+                        bahagia.
+                    </p>
+                    <p>"Aku pasti berhasil memenuhi permintaanmu," kata Bandung Bondowoso.</p>
+                    <p>Bandung Bondowoso pun langsung beranjak untuk memenuhi permintaan Roro Jonggrang. Ia meminta
+                        bantuan pada pasukan jin
+                        karena membangun seribu candi dalam waktu semalam adalah pekerjaan mudah bagi bangsa jin.</p>
+                    <p>Benar saja, dalam waktu singkat, bangunan candi mulai tampak. Melihat itu semua, Roro
+                        Jonggrang mulai gelisah dan panik.</p>
+                    <p>"Bi Sumi, kita harus melakukan sesuatu! Lihatlah, candinya hampir siap," kata Roro Jonggrang
+                        pada Bi Sumi di dalam
+                        istana.</p>
+                    <p>Bi Sumi juga tampak panik. Namun, tiba-tiba saja, Bi Sumi memiliki ide untuk membantu Roro
+                        Jonggrang.</p>
+                    <p>"Hamba punya ide. Ayo, ikuti hamba," ujar Bi Sumi.</p>
+                    <p>Roro Jonggrang dan Bi Sumi lalu menyelinap ke luar kamar dan menuju ke kamar dayang-dayang
+                        yang letaknya tak jauh dari
+                        kamar mereka. Bi Sumi lalu memerintahkan para dayang dan pengawal istana yang setia untuk
+                        mengumpulkan jerami.</p>
+                    <p>"Untuk apa, Bi?" tanya Roro Jonggrang.</p>
+                    <p>Bi Sumi lalu menempelkan telunjuknya di bibir dan berbisik pada Roro Jonggrang, "Kita akan
+                        membakar jerami ini, sehingga
+                        langit terkesan menjadi merah, pertanda matahari sudah terbit," katanya.</p>
+                    <p>Setelah jeraminya terkumpul, Bi Sumi lalu membakarnya. Dia juga memerintahkan para dayang
+                        untuk menumbuk lesung.</p>
+                    <p>Suara lesung yang bertalu-talu, ditambah semburat api yang memecah langit, membuat suasananya
+                        mirip pagi hari. Ayam
+                        jantan pun tertipu dan berkokok keras memecah suasana hening.</p>
+                    <p>"Kukuruyukk...kukuruyukkk..."</p>
+                    <p>Mendengar suara ayam jantan, Bandung Bondowoso dan para jin terkejut. Mereka melihat ke
+                        langit yang sudah cukup terang.</p>
+                    <p>"Wah, ternyata haru sudah pagi. Kami harus pergi!" teriak para jin sambil bergegas pergi.</p>
+                    <p>Bandung Bodowoso tak berkutik dan membiarkan para jin pergi. Ia lalu memandangi candi buatan
+                        para jin dan yakin
+                        jumlahnya sudah seribu, sesuai permintaan Roro Jonggrang.</p>
+                    <p>"Roro Jonggrang tak akan bisa mengelak," kata Bandung Bondowoso.</p>
+                    <p>Ia lalu segera mencari Roro Jonggrang untuk melaporkan candi-candi yang sudah dibangunnya.
+                        Roro Jonggrag lalu menghitung
+                        candi-candi yang sudah selesai.</p>
+                    <p>"997, 998, 999, dan.... jumlahnya kurang satu!" kata Roro Jonggrang.</p>
+                    <p>Bandung Bondowoso tak percaya apa yang didengarnya. Ia lalu menghitung sendiri jumlah candi
+                        dan ternyata memang benar,
+                        candi yang dibangun pasukan jin hanya berjumlah 999.</p>
+                    <p>Bandung Bondowoso sangat kecewa dan marah. Ia tak menyangka bisa gagal memenuhi permintaan
+                        Roro Jonggrang.</p>
+                    <p>"Aku tak pernah kalah. Apa pun yang aku inginkan, pasti akan kudapatkan. Jika aku mau seribu
+                        candi, maka aku akan
+                        mendapatkannya," ujar Bandung Bondowoso.</p>
+                    <p>"Tapi jumlahnya memang kurang satu. Kau harus menepati janjimu," kata Roro Jonggrang yang
+                        mulai takut melihat amarah
+                        Bandung Bondowoso.</p>
+                    <p>Tak terima disebut kalah, Bandung Bondowoso lalu meminta Roro Jonggrang menjadi candi
+                        keseribu. Dengan kesaktiannya, ia
+                        mengubah Roro Jonggrang menjadi patung batu.</p>
+                    <p>"Jika begitu, kau saja yang melengkapi jumlah candi ini. Jadilah kau candi keseribu!" teriak
+                        Bandung Bondowoso.</p>
+                    <p>Patung Roro Jonggrang lalu melengkapi jumlah candi menjadi seribu buah. Sampai sekarang,
+                        candi-candi tersebut masih
+                        berdiri dengan megah di wilayah Prambanan dan disebut dengan nama Candi Sewu. Kisah Roro
+                        Jonggrang pun menjadi cerita
+                        rakyat yang terkenal di Indonesia.</p>
+                </article>
+            </div>
+            <aside>
+                <div class="profile-mobile">
+                    <span class="material-symbols-outlined" style="color: grey;"> account_circle </span>
+                </div>
+                <article>
+                    <h2 style="margin: 0; text-align: center; border-bottom: 1.5px solid black; margin-bottom: 10px;">
+                        Profile</h2>
+                    <div class="profile-picture">
+                        <img src="./assets/this-is-me.png" alt="Author profile picture" height="auto" width="100px" />
+                    </div>
+                    <table>
+                        <tr>
+                            <td>Nama</td>
+                            <td>:&nbsp;FAHIM</td>
+                        </tr>
+                        <tr>
+                            <td>Github</td>
+                            <td>
+                                :&nbsp;<a href="https://github.com/rynare" target="_blank">Rynare</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Repo ini</td>
+                            <td>
+                                :&nbsp;<a href="https://github.com/Rynare/dicoding_submission-basic-web-dev"
+                                    target="_blank">Kunjungi</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>
+                                :&nbsp;<a href="mailto:m.fahim.david.bachtiar@gmail.com">Hubungi</a></a>
+                            </td>
+                        </tr>
+                    </table>
+                </article>
+            </aside>
+        </main>
+        <footer>
+            Candi Prambanan &copy; 2019, Thanks to&nbsp;<a href="./credit.html">All</a>
+        </footer>
+        <script src="./app/scripts/script.js"></script>
+    </body>
+
 </html>

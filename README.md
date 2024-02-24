@@ -8,6 +8,8 @@ bg 2 = https://world-glas.blogspot.com/2021/08/prambanan-free-wifi.html
 bg 3 = https://www.expedia.com/pictures/yogyakarta/prambanan/prambanan-temple.d6106384/
 https://webcode.tools/css-generator/keyframe-animation
 
+https://www.haibunda.com/parenting/20210902104528-61-236870/kisah-roro-jonggrang-legenda-candi-prambanan-yang-bisa-diceritakan-ke-anak
+
 /_ Extra small devices (phones, 600px and down) _/
 @media only screen and (max-width: 600px) {...}
 
