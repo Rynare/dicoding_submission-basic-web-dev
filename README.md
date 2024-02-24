@@ -9,6 +9,7 @@ bg 3 = https://www.expedia.com/pictures/yogyakarta/prambanan/prambanan-temple.d6
 https://webcode.tools/css-generator/keyframe-animation
 
 https://www.haibunda.com/parenting/20210902104528-61-236870/kisah-roro-jonggrang-legenda-candi-prambanan-yang-bisa-diceritakan-ke-anak
+https://prambanan.slemankab.go.id/candi-prambanan/
 
 /_ Extra small devices (phones, 600px and down) _/
 @media only screen and (max-width: 600px) {...}
