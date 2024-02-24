@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/x-icon" href="./assets/prambanan-logo.ico" />
-    <title>Candi Prambanan</title>
+    <title>Cerita Rakyat</title>
     <meta name="author" content="M. FAHIM DAVID BACHTIAR" />
     <meta
       name="description"
@@ -84,68 +84,15 @@
     </header>
     <main>
       <div id="content">
-        <article class="show" style="display: block">
-          <div class="intro-card">
-            <h2>Candi Prambanan</h2>
-            <p>
-              Candi Prambanan, keajaiban Hindu yang memesona di Jawa. Kunjungi
-              kompleks candi terbesar di Indonesia dan kagumi arsitekturnya yang
-              megah, pahatan rumit, dan sejarahnya yang kaya. Rasakan kejayaan
-              kerajaan Mataram kuno!
-            </p>
-          </div>
-          <div class="intro-player">
-            <span class="material-symbols-outlined"> play_arrow </span>
-          </div>
-        </article>
-        <article class="hidden" style="display: none">
-          <div class="vid-card">
-            <h2>Candi Prambanan</h2>
-            <iframe
-              width="auto"
-              height="auto"
-              src="https://www.youtube.com/embed/PF_g-gp3fJg?si=zZXyo-XxZSsVrhhr"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-            <p>Video Vlog di candi prambanan</p>
-          </div>
-          <div class="intro-player">
-            <span class="material-symbols-outlined"> article </span>
-          </div>
-        </article>
+        <article></article>
       </div>
-      <aside></aside>
+      <aside>
+        <div class="profile-mobile">
+          <span class="material-symbols-outlined"> account_circle </span>
+        </div>
+      </aside>
     </main>
+    <footer></footer>
     <script src="./app/scripts/script.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        function changeArticleToHidden(currentElement, nextElement) {
-          currentElement.addEventListener("click", () => {
-            currentElement.parentElement.classList.add("hidden");
-            currentElement.parentElement.classList.contains("show")
-              ? currentElement.parentElement.classList.remove("show")
-              : "";
-            setTimeout(() => {
-              currentElement.parentElement.style.display = "none";
-              nextElement.parentElement.style.display = "block";
-              nextElement.parentElement.classList.add("show");
-            }, 200);
-          });
-        }
-
-        const viewVideo = document.querySelector(
-          "article:nth-child(1) .intro-player"
-        );
-        const viewArticle = document.querySelector(
-          "article:nth-child(2) .intro-player"
-        );
-
-        changeArticleToHidden(viewVideo, viewArticle);
-        changeArticleToHidden(viewArticle, viewVideo);
-      });
-    </script>
   </body>
 </html>

@@ -1,0 +1,14 @@
+/* body{
+    background-image: url('../../assets/Prambanan-welcome-pict-3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.backdrop{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .4;
+} */
