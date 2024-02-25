@@ -217,7 +217,7 @@ article.show {
 }
 
 article [class*=card] {
-    background-color: rgba(255, 255, 255, 0.73);
+    background-color: rgba(255, 255, 255, 0.814);
     box-shadow: 0px 4px 10px 1px black;
     padding: 5px 20px;
     border-radius: 10px;
@@ -230,7 +230,7 @@ article [class*=card] {
 .intro-player {
     width: 100px;
     height: 40px;
-    background-color: rgba(255, 255, 255, 0.715);
+    background-color: rgba(255, 255, 255);
     margin: 10px auto 0 auto;
     display: flex;
     align-items: center;
@@ -277,6 +277,7 @@ aside .profile-mobile {
 aside article {
     background-color: white;
     padding: 5px 20px;
+    max-width: 178px;
     border-radius: 0 0 0 10px;
     -webkit-border-radius: 0 0 0 10px;
     -moz-border-radius: 0 0 0 10px;
@@ -298,8 +299,20 @@ aside table td {
     height: 35px;
 }
 
+#content header {
+    text-align: center;
+}
+
 #content {
     background-color: white;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px 0 black;
+}
+
+#content figure img {
+    width: 100%;
 }
 
 footer {

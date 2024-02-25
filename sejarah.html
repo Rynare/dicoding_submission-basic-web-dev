@@ -27,8 +27,8 @@
                 font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
             }
         </style>
-        <link rel="stylesheet" media="screen and (min-width: 992px)"
-            href="./app/styles/laptop-dekstop(min 992px).css" />
+        <link rel="stylesheet" media="screen and (min-width: 800px)"
+            href="./app/styles/laptop-dekstop(min 800px).css" />
         <link rel="stylesheet" media="screen and (min-width: 600px)" href="./app/styles/large-phone(min 600px).css" />
     </head>
 
@@ -68,17 +68,10 @@
         </header>
         <main style="overflow-y: auto">
             <style>
-                #content header {
-                    text-align: center;
-                }
-
-                #content {
-                    padding: 5px 10px;
-                    margin-bottom: 10px;
-                }
-
-                #content figure img {
-                    width: 100%;
+                @media screen and (min-width: 800px) {
+                    #content article h3 {
+                        font-size: 22px !important;
+                    }
                 }
             </style>
             <div id="content">

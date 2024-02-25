@@ -51,9 +51,25 @@ document.addEventListener('DOMContentLoaded', () => {
     asideProfile.classList.toggle('show-mobile')
   }
 
+  function isHome() {
+    const home = [
+      'index.html',
+      'credit.html',
+      'dicoding_submission-basic-web-dev',
+      '/dicoding_submission-basic-web-dev/',
+    ]
+    let result = false
+    home.forEach(homeUrl => {
+      if (window.location.pathname.endsWith(homeUrl) && result === false) {
+        result = true
+      }
+    });
+    return result
+  }
+
   function asideProfileBtnEventToggle() {
     const profileMobileBtn = document.querySelector('aside .profile-mobile')
-    if (getBrowserWidth() <= 360) {
+    if (getBrowserWidth() <= 360 || isHome()) {
       profileMobileBtn.addEventListener('click', asideProfileBtnOnClick)
     } else {
       profileMobileBtn.removeEventListener('click', asideProfileBtnOnClick)

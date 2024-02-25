@@ -27,7 +27,6 @@
         font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
       }
     </style>
-    <link rel="stylesheet" media="screen and (min-width: 992px)" href="./app/styles/laptop-dekstop(min 992px).css" />
     <link rel="stylesheet" media="screen and (min-width: 600px)" href="./app/styles/large-phone(min 600px).css" />
   </head>
 
@@ -66,8 +65,18 @@
       </nav>
     </header>
     <main>
-      <div id="content" style=" background-color: transparent;">
-        <article class="show" style="display: block;">
+      <style>
+        article {
+          flex-direction: column;
+        }
+
+        article [class*=card] {
+          max-width: 600px;
+          align-self: center;
+        }
+      </style>
+      <div id="content" style=" background-color: transparent; box-shadow: none;">
+        <article class="show" style="display: flex;">
           <div class="intro-card">
             <h2>Candi Prambanan</h2>
             <p>
@@ -87,7 +96,7 @@
             <iframe width="auto" height="auto" src="https://www.youtube.com/embed/PF_g-gp3fJg?si=zZXyo-XxZSsVrhhr"
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen style="width: 100%;"></iframe>
+              allowfullscreen style="width: auto;height: 40vh;max-height: 40vh;"></iframe>
             <p>Video Vlog di candi prambanan</p>
           </div>
           <div class="intro-player">
@@ -95,9 +104,47 @@
           </div>
         </article>
       </div>
+      <aside>
+        <div class="profile-mobile">
+          <span class="material-symbols-outlined" style="color: grey;"> account_circle </span>
+        </div>
+        <article>
+          <h2 style="margin: 0; text-align: center; border-bottom: 1.5px solid black; margin-bottom: 10px;">
+            Profile</h2>
+          <div class="profile-picture">
+            <img src="./assets/this-is-me.png" alt="Author profile picture" height="auto" width="100px" />
+          </div>
+          <table>
+            <tr>
+              <td>Nama</td>
+              <td>:&nbsp;FAHIM</td>
+            </tr>
+            <tr>
+              <td>Github</td>
+              <td>
+                :&nbsp;<a href="https://github.com/rynare" target="_blank">Rynare</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Repo ini</td>
+              <td>
+                :&nbsp;<a href="https://github.com/Rynare/dicoding_submission-basic-web-dev"
+                  target="_blank">Kunjungi</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td>
+                :&nbsp;<a href="mailto:m.fahim.david.bachtiar@gmail.com">Hubungi</a></a>
+              </td>
+            </tr>
+          </table>
+        </article>
+      </aside>
     </main>
     <script src="./app/scripts/script.js"></script>
     <script>
+
       document.addEventListener("DOMContentLoaded", () => {
         function changeArticleToHidden(currentElement, nextElement) {
           currentElement.addEventListener("click", () => {
@@ -107,8 +154,9 @@
               : "";
             setTimeout(() => {
               currentElement.parentElement.style.display = "none";
-              nextElement.parentElement.style.display = "block";
+              nextElement.parentElement.style.display = "flex";
               nextElement.parentElement.classList.add("show");
+              nextElement.parentElement.classList.remove('hidden');
             }, 200);
           });
         }
