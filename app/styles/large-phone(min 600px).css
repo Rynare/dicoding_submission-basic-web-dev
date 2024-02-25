@@ -18,6 +18,8 @@ body {
     .nav-main ul {
         display: flex;
         font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        color: white;
     }
 
     .nav-mobile {

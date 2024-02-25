@@ -299,6 +299,10 @@ aside table td {
     height: 35px;
 }
 
+aside table td:nth-child(1) {
+    font-weight: bold;
+}
+
 #content header {
     text-align: center;
 }

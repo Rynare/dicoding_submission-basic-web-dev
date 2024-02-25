@@ -32,7 +32,7 @@ aside article {
 }
 
 aside .profile-picture {
-    position: static;
+    position: relative;
     right: -10px;
 }
 
