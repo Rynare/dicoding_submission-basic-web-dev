@@ -33,15 +33,13 @@ header {
 }
 
 header.scrolled {
-    background: rgb(76, 151, 218);
-    background: -moz-linear-gradient(135deg, rgba(76, 151, 218, 1) 0%, rgba(88, 118, 255, 1) 53%, rgba(88, 142, 255, 1) 100%);
-    background: -webkit-linear-gradient(135deg, rgba(76, 151, 218, 1) 0%, rgba(88, 118, 255, 1) 53%, rgba(88, 142, 255, 1) 100%);
-    background: linear-gradient(135deg, rgba(76, 151, 218, 1) 0%, rgba(88, 118, 255, 1) 53%, rgba(88, 142, 255, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4c97da", endColorstr="#588eff", GradientType=1);
-}
+    background: rgb(80, 154, 217);
+    background: -moz-linear-gradient(135deg, rgba(80, 154, 217, 1) 0%, rgba(78, 152, 217, 1) 53%, rgba(50, 129, 198, 1) 100%);
+    background: -webkit-linear-gradient(135deg, rgba(80, 154, 217, 1) 0%, rgba(78, 152, 217, 1) 53%, rgba(50, 129, 198, 1) 100%);
+    background: linear-gradient(135deg, rgba(80, 154, 217, 1) 0%, rgba(78, 152, 217, 1) 53%, rgba(50, 129, 198, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#509ad9", endColorstr="#3281c6", GradientType=1);
 
-header.scrolled .hamburger-line {
-    background-color: black;
+    box-shadow: 0px 1px 10px black;
 }
 
 nav ul {
@@ -252,6 +250,12 @@ aside {
     -moz-transition: ease .5s;
     -ms-transition: ease .5s;
     -o-transition: ease .5s;
+    top: 112px;
+    right: -180px;
+}
+
+aside.show-mobile {
+    right: 0;
 }
 
 aside .profile-mobile {
